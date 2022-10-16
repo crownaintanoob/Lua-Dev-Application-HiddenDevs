@@ -73,7 +73,7 @@ function crownMatchmaking:AddPlayerToQueue(plr)
 	local queueListGot = {}
 	repeat
 		local successGet, listOfQueues = pcall(function()
-			return queueMap:GetRangeAsync(Enum.SortDirection.Ascending, 30) -- Returns a list of the 25 newest queues available
+			return queueMap:GetRangeAsync(Enum.SortDirection.Ascending, 30) -- Returns a list of the 30 newest queues available
 		end)
 		if successGet == true then
 			isSuccessGet = true
